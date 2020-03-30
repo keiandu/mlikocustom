@@ -1,0 +1,1797 @@
+/****************************************
+		1. reset.css(sanitize)
+*****************************************/
+
+/*! sanitize.css v4.0.0 | CC0 License | github.com/10up/sanitize.css */
+
+/* Display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ 
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+	display: block;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, object, iframe, pre, code, p, blockquote, form, fieldset, legend, table, th, td, caption, tbody, tfoot, thead, article, aside, figure, footer, header, hgroup, menu, nav, section, audio, video, canvas, main {
+	margin: 0;
+	padding: 0;
+}
+article, aside, figure, figcaption, footer, h1, h2, h3, h4, h5, h6, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+ul, li, ol {
+  list-style-position: inside;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+	display: none;
+}
+
+/* Elements of HTML (https://www.w3.org/TR/html5/semantics.html)
+   ========================================================================== */
+
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add box sizing inheritence in all browsers (opinionated).
+ */
+
+*,
+::before,
+::after {
+	background-repeat: no-repeat; /* 1 */
+	box-sizing: inherit; /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritence in all browsers (opinionated).
+ */
+
+::before,
+::after {
+	text-decoration: inherit; /* 1 */
+	vertical-align: inherit; /* 2 */
+}
+
+/**
+ * 1. Add border box sizing in all browsers (opinionated).
+ * 2. Add the default cursor in all browsers (opinionated).
+ * 3. Add a flattened line height in all browsers (opinionated).
+ * 4. Prevent font size adjustments after orientation changes in IE and iOS.
+ */
+
+html {
+	box-sizing: border-box; /* 1 */
+	cursor: default; /* 2 */
+	font-family: Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	line-height: 1.8; /* 3 */
+	-ms-text-size-adjust: 100%; /* 4 */
+	-webkit-text-size-adjust: 100%; /* 5 */
+	font-size: 62.5%;
+}
+
+/* Sections (https://www.w3.org/TR/html5/sections.html)
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	vertical-align: baseline;
+	color: #343E47;
+}
+body {
+	font-size: 1.4rem;
+}
+
+/**
+ * Correct the font sizes and margins on `h1` elements within
+ * `section` and `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+
+/* Grouping content (https://www.w3.org/TR/html5/grouping-content.html)
+   ========================================================================== */
+
+/**
+ * 1. Correct font sizing inheritance and scaling in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * 1. Correct the height in Firefox.
+ * 2. Add visible overflow in Edge and IE.
+ */
+
+hr {
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+
+nav ol,
+nav ul {
+	list-style: none;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Add a bordered underline effect in all browsers.
+ * 2. Remove text decoration in Firefox 40+.
+ */
+
+abbr[title] {
+	border-bottom: 1px dotted; /* 1 */
+	text-decoration: none; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Add the correct colors in IE 9-.
+ */
+
+mark {
+	background-color: #ffff00;
+	color: #000000;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Correct the font size in all browsers.
+ */
+
+small {
+	font-size: 83.3333%;
+}
+
+/**
+ * Change the positioning on superscript and subscript elements
+ * in all browsers (opinionated).
+ * 1. Correct the font size in all browsers.
+ */
+
+sub,
+sup {
+	font-size: 83.3333%; /* 1 */
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+sup {
+	top: -.5em;
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::-moz-selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+
+::selection {
+	background-color: #b3d4fc; /* 1 */
+	color: #000000; /* 1 */
+	text-shadow: none;
+}
+
+/* Embedded content (https://www.w3.org/TR/html5/embedded-content-0.html)
+   ========================================================================== */
+
+/*
+ * Change the alignment on media elements in all browers (opinionated).
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+
+svg {
+	fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Links (https://www.w3.org/TR/html5/links.html#links)
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove the gaps in underlines in iOS 8+ and Safari 8+.
+ */
+
+a {
+	background-color: transparent; /* 1 */
+	-webkit-text-decoration-skip: objects; /* 2 */
+	text-decoration: none;
+	color: inherit;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/**
+ * Remove the outline when hovering in all browsers (opinionated.
+ */
+
+:hover {
+	outline-width: 0;
+}
+
+/* Tabular data (https://www.w3.org/TR/html5/tabular-data.html)
+   ========================================================================== */
+
+/*
+ * Remove border spacing in all browsers (opinionated).
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* transform-style:  (https://www.w3.org/TR/html5/forms.html)
+   ========================================================================== */
+
+/**
+ * 1. Remove the default styling in all browsers (opinionated).
+ * 3. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+	background-color: transparent; /* 1 */
+	border-style: none; /* 1 */
+	color: inherit; /* 1 */
+	font-size: 1em; /* 1 */
+	margin: 0; /* 3 */
+}
+
+/**
+ * Correct the overflow in IE.
+ * 1. Correct the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance in Edge, Firefox, and IE.
+ * 1. Remove the inheritance in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * 1. Prevent the WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Correct the focus styles unset by the previous rule.
+ */
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the border, margin, and padding in all browsers.
+ */
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 2 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Remove the vertical scrollbar in IE.
+ * 2. Change the resize direction on textareas in all browsers (opinionated).
+ */
+
+textarea {
+	overflow: auto; /* 1 */
+	resize: vertical; /* 2 */
+}
+
+/**
+ * Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	padding: 0;
+}
+
+/**
+ * Correct the cursor style on increment and decrement buttons in Chrome.
+ */
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari for OS X.
+ */
+
+::-webkit-search-cancel-button,
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * Correct the text style on placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: .54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* WAI-ARIA (https://www.w3.org/TR/html5/dom.html#wai-aria)
+   ========================================================================== */
+
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+
+[aria-busy="true"] {
+	cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements (opinionated).
+ */
+
+[aria-controls] {
+	cursor: pointer;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements (opinionated).
+ */
+
+[aria-disabled] {
+	cursor: default;
+}
+
+/* User interaction (https://www.w3.org/TR/html5/editing.html)
+   ========================================================================== */
+
+/*
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+	-ms-touch-action: manipulation; /* 1 */
+	touch-action: manipulation;
+}
+
+/*
+ * Change the display on visually hidden accessible elements (opinionated).
+ */
+
+[hidden][aria-hidden="false"] {
+	clip: rect(0, 0, 0, 0);
+	display: inherit;
+	position: absolute;
+}
+
+[hidden][aria-hidden="false"]:focus {
+	clip: auto;
+}
+
+/*
+*
+* 00.General Style
+*
+*/
+
+.clearfix:after {
+	content:" ";
+	display:block;
+	clear:both;
+}
+.ff_mincho {
+  font-family: 'Times New Roman', 'ff-serif', "Yu Mincho", "Hiragino Mincho Pro", "Hiragino Mincho ProN", "MS PMincho", 'Times New Roman', serif;
+  font-weight: normal;
+}
+.ff_math {
+    font-family: 'Century Gothic';
+    font-weight: normal;
+}
+.ff_l {
+	font-size: 2.2rem;
+}
+.ff_m {
+	font-size: 1.8rem;
+}
+.text-red {
+  color: red;
+}
+.bg-wrap-red {
+  border-radius: 8px;
+  background: #fdf7f8;
+  padding: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
+/* 全体汎用枠（820pxにしたいところにつける。SP用もここで */
+.mc_section_inner {
+  width: 820px;
+  margin: 0 auto 80px;
+}
+  .mc_section_inner.under_space {
+    margin-bottom: 64px;
+  }
+  .mc_section_inner__bread {
+    width: 820px;
+    margin: 0 auto 40px;
+  }
+.other .mc_section_inner {
+  margin-bottom: 56px;
+}
+/* 斜め区切り線 */
+.mc_slash_right,
+.mc_slash_left {
+  position: relative;
+}
+.mc_slash_right::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 60px solid transparent;  /* 透明 */ 
+  border-left: 50vw solid transparent;  /* 透明 */ 
+  border-right: 50vw solid #FFF;  /* 白 */ 
+  border-bottom: 60px solid #FFF;  /* 白 */
+  z-index: 1;
+}
+.mc_slash_left::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: 60px solid #FFF;
+  border-left: 50vw solid #FFF;
+  border-right: 50vw solid transparent;
+  border-bottom: 60px solid transparent;
+  z-index: 1;
+}
+@media only screen and (max-width: 2000px) {
+  .mc_slash_right::after {
+    border-left: 1000px solid transparent;  /* 実数で幅を指定 */
+    border-right: 1000px solid #FFF;  /* 実数で幅を指定 */
+  }
+  .mc_slash_left::before {
+    border-right: 1000px solid transparent;  /* 実数で幅を指定 */
+    border-left: 1000px solid #FFF;  /* 実数で幅を指定 */
+  }
+}
+/* 背景に色を付ける */
+.colorfilter_blue {
+  background-color: rgba(34, 85, 123, 100);
+}
+/* テキストUnderLine */
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+  .underline::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+  }
+  .underline_parent:hover .underline::after {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+/* title */
+.mc_mainttl {
+  font-family: 'Times New Roman', 'ff-serif', "Yu Mincho", "Hiragino Mincho Pro", "Hiragino Mincho ProN", "MS PMincho", 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+.mc_subttl {
+  font-size: 1.8rem;
+}
+.mc_textarea {
+  margin-bottom: 24px;
+}
+.mc_contents_ttl {
+  position: relative;
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+.mc_contents_ttl:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-color: black;
+  margin-top: -4px;
+  left: 0px;
+}
+
+
+/*
+*
+* 01.Component
+*
+*/
+
+/* Component① */
+/* 写真 3set（margin無し）*/
+/* - 横並び 3set */
+.mc_cp_borderess_photo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+/* - 横並び 4set 段あり */
+.mc_cp_borderess_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+  .mc_cp_borderess_gallery .photo {
+    width: 25%;
+  }
+
+/* Component② */
+/* 写真＋キャプション（margin有り） */
+/* - 横並び 3set */
+/* - otherの場合はpadding有り */
+.mc_cp_caption_photo,
+.mc_cp_caption_photo_other {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+  .mc_cp_caption_photo__unit,
+  .mc_cp_caption_photo_other__unit {
+    width: 31%;
+  }
+  .mc_cp_caption_photo_other__unit {
+    background: #EEE;
+    padding: 16px;
+  }
+    .mc_cp_caption_photo__unit .text .ttl,
+    .mc_cp_caption_photo_other__unit .text .ttl {
+      display: block;
+      font-weight: bold;
+      font-size: 1.6rem;
+      padding-bottom: 8px;
+    }
+    .mc_cp_caption_photo__unit .photo,
+    .mc_cp_caption_photo_other__unit .photo {
+      display: block;
+      margin-bottom: 16px;
+    }
+    .mc_cp_caption_photo_other__unit .btn {
+      width: 100%;
+      padding: 8px 16px;
+      text-align: center;
+      display: block;
+      color: #FFF;
+      background: #12314c;
+      margin-top: 24px;
+    }
+      .mc_cp_caption_photo_other__unit .btn:hover {
+        background: #233A4E;
+      }
+/* - 中央 1set */
+.mc_cp_center_photo {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+  .mc_cp_center_photo__unit {
+    width: 49%;
+  }
+  .mc_cp_center_photo__unit .text {
+    margin-top: 24px;
+  }
+/* - border有りコンテンツ */
+.mc_cp_bordercontents {
+  border: 1px solid #ccc;
+  padding: 32px;
+}
+  .mc_cp_bordercontents .photo {
+    margin-bottom: 32px;
+  }
+/* - tableコンテンツ */
+.mc_cp_table {
+  border: 1px solid #ccc;
+  width: 100%;
+}
+  .mc_cp_table tr {
+    border-bottom: 1px solid #ccc;
+  }
+  .mc_cp_table tr th {
+    background: #12314c;
+    color: #FFF;
+  }
+  .mc_cp_table tr th,
+  .mc_cp_table tr td {
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding: 8px;
+  }
+/* - listcontents */
+.mc_cp_2column_liststyle {
+}
+  .mc_cp_2column_liststyle > dl {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 12px 0;
+  }
+    .mc_cp_2column_liststyle > dl > dt {
+      font-weight: bold;
+      width: 180px;
+    }
+    .mc_cp_1column_liststyle > ul {
+      list-style: none;
+    }
+      .mc_cp_1column_liststyle > ul > li {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        padding: 12px 0;
+      }
+      .mc_cp_1column_liststyle > ul > li:before {
+        content: '●';
+        padding: 0 8px 0 0;
+      }
+/* 
+/* Component③④ */
+/* 背景写真＋写真（背景）＋オーバーテキスト
+/* マウスオーバーでテキストにアンダーライン
+/* - 横並び 3set（mc_cp_bgphoto_contents__overnav）
+/* - 折返し xset（mc_cp_bgphoto_contents__squarenav） 
+*/
+.mc_cp_bgphoto_contents {
+  position: relative;
+  width: 100%;
+}
+  .mc_cp_bgphoto_contents__overnav,
+  .mc_cp_bgphoto_contents__squarenav {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 820px;
+    height: 100%;
+    left: 50%;
+    margin-left: -410px;
+    color: #FFF;
+  }
+    .mc_cp_bgphoto_contents__squarenav__article {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .mc_cp_bgphoto_contents__overnav__bg {
+      background: rgb(18, 49, 76);
+      height: 500px;
+    }
+      .mc_cp_bgphoto_contents__overnav__unit {
+        width: 32%;
+        position: relative;
+        margin-bottom: 40px;
+      }
+      .mc_cp_bgphoto_contents__squarenav__unit {
+        width: 48%;
+        position: relative;
+      }
+      .mc_cp_bgphoto_contents__overnav__unit .text,
+      .mc_cp_bgphoto_contents__squarenav__unit .text {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        z-index: 10;
+        font-size: 2.0rem;
+        background: rgba(0, 0, 0, 0.3);
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-property: background-color, color;
+        transition-property: background-color, color;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+      }
+        .mc_cp_bgphoto_contents__squarenav__unit {
+          margin-bottom: 64px;
+        }
+        .mc_cp_bgphoto_contents__squarenav__unit:nth-child(1),
+        .mc_cp_bgphoto_contents__squarenav__unit:nth-child(2) {
+          margin-bottom: 24px;
+        }
+        .mc_cp_bgphoto_contents__overnav__unit .text:hover,
+        .mc_cp_bgphoto_contents__squarenav__unit .text:hover {
+          background: rgba(18, 49, 76, 0.8);
+        }
+
+/* 
+/* Component⑤ */
+/* 背景写真＋テキスト＋ボタン
+*/
+  .mc_cp_bgphoto_contents__centertext {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    
+    width: 820px;
+    height: 100%;
+    left: 50%;
+    margin-left: -410px;
+    color: #000;
+  }
+    .mc_cp_bgphoto_contents .bgphoto {
+      filter: opacity(25%);
+    }
+    .mc_cp_bgphoto_contents__centertext__btn {
+      display: inline-block;
+      border-radius: 32px;
+      padding: 12px 24px;
+      color: #FFF;
+      background: rgba(52, 62, 71, 0.8);
+    }
+      .mc_cp_bgphoto_contents__centertext__btn:hover {
+        background: rgba(18, 49, 76, 0.8);
+      }
+
+/* 
+/* Component⑥ */
+/* 写真＋スライダー
+*/ 
+.mc_cp_slider__article {
+  position: relative;
+  opacity: 75%;
+}
+  .mc_cp_slider__article.slick-active:hover {
+    opacity: 100%;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: background-color, color, opacity;
+    transition-property: background-color, color, opacity;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+  }
+  .mc_cp_slider__article__title {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    padding: 16px;
+    z-index: 10;
+  }
+  .mc_photo_gradiate {
+    position: relative;
+  }
+    .mc_photo_gradiate:after {
+      position: absolute;
+      content:"";
+      top:0;
+      left:0;
+      width: 100%;
+      height:100%;
+      /* 塗りつぶす */
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, #000 100%);
+    }
+  .slick_prev_arrow {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    z-index: 101;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    margin-top: -20px;
+  }
+  .slick_next_arrow {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.8);
+    margin-top: -20px;
+  }
+    .slick_prev_arrow:hover,
+    .slick_next_arrow:hover {
+      background: rgba(18, 49, 76, 0.8);
+      color: #FFF;
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-property: background-color, color;
+      transition-property: background-color, color;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease;
+    }
+/* 
+/* Component⑦ */
+/* 写真＋オーバーテキスト
+/* マウスオーバーでテキストにアンダーライン
+*/
+.mc_cp_contents__overnav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #FFF;
+}
+  .mc_cp_contents__overnav__unit {
+    width: 48%;
+    position: relative;
+  }
+    .mc_cp_contents__overnav__unit .text {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      z-index: 10;
+      font-size: 2.0rem;
+      background: rgba(0, 0, 0, 0.3);
+      -webkit-transition-duration: 0.2s;
+      transition-duration: 0.2s;
+      -webkit-transition-property: background-color, color;
+      transition-property: background-color, color;
+      -webkit-transition-timing-function: ease;
+      transition-timing-function: ease;
+    }
+      .mc_cp_contents__overnav__unit .text:hover {
+        background: rgba(18, 49, 76, 0.8);
+      }
+    .mc_cp_contents__overnav__unit img {
+      width: 100%;
+    }
+/*
+*
+* 02.header
+*
+*/
+.mc_float_header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 0 16px;
+  -webkit-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -moz-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  -ms-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+  z-index: 2;
+}
+  .mc_float_header_inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+    /* drawer open btn */
+    /* .mc_open_drawer {
+      position: absolute;
+      display: none;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+    }
+      .mc_open_drawer:hover {
+        color: #999;
+      } */
+
+  /* logo */
+  .header_logo a {
+    display: flex;
+    align-items: center;
+  }
+    .header_logo span {
+      font-size: 2.2rem;
+      display: inline-block;
+      padding-left: 8px;
+      font-weight: 100;
+    }
+  /* global menu */
+  ul.mc_global_menu {
+    display: flex;
+    line-height: 80px;
+  }
+    ul.mc_global_menu .main_nav {
+      padding: 0 28px;
+      position: relative;
+      cursor: pointer;
+    }
+      ul.mc_global_menu .main_nav:hover > a {
+        color: #999;
+      }
+    /* inline menu */
+    ul.mc_global_menu .sub_nav {
+      position: absolute;
+      display: block; 
+      visibility: hidden; 
+      z-index: 1; 
+      position: absolute; 
+      top: 80px;
+      left: 12px;
+      height: auto; 
+      -webkit-transform: translateY(-10px); 
+      transform: translateY(-10px); 
+      line-height: 1.2; 
+      opacity: 0; 
+      -webkit-transition: 0.2s; 
+      transition: 0.2s; 
+    }
+      ul.mc_global_menu .main_nav:last-child .sub_nav {
+        left: inherit;
+        right: 0px;
+      }
+      ul.mc_global_menu .sub_nav li a {
+        display: block;
+        width: 240px;
+        padding: 16px 16px;
+        background: rgba(52, 62, 71, 0.8);
+        color: #FFF;
+      }
+      ul.mc_global_menu .sub_nav li a:hover {
+        background: rgb(18, 49, 76);
+      }
+    ul.mc_global_menu .main_nav:hover > .sub_nav { 
+      visibility: visible;
+      -webkit-transform: translateY(0); 
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  /* mobile menu */
+  .mc_mobile_menu__wrap {
+  }
+    .mc_mobile_menu__bg {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: rgba(0,0,0,0.6);
+      z-index: 39;
+    }
+  ul.mc_mobile_menu {
+    background: rgb(18, 49, 76);
+    color: #FFF;
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 40;
+    -webkit-transition: right 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    transition: right 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+    ul.mc_mobile_menu.active {
+      box-shadow: -5px 0 20px 0 rgba(0,0,0,0.4);
+    }
+    ul.mc_mobile_menu .main_nav {
+      position: relative;
+    }
+    ul.mc_mobile_menu .main_nav .main_nav__child_btn{
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 52px;
+      height: 53px;
+      right: 0px;
+      top: 0px;
+      z-index: 9;
+      cursor: pointer;
+      z-index: 50;
+    }
+    ul.mc_mobile_menu .main_nav .icon_arrow::before  {
+      content: '▼';
+      color: rgb(255, 255, 255);
+      text-align: center;
+      display: block;
+      font-size: 12px;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      margin-top: -8px;
+      margin-right: -6px;
+    }
+    ul.mc_mobile_menu .main_nav .icon_arrow.open::before  {
+      content: '▲';
+    }
+      ul.mc_mobile_menu .main_nav .main_nav__child_btn:hover {
+        background: #0D263D;
+      }
+    ul.mc_mobile_menu .sub_nav {
+      display: none;
+    }
+      ul.mc_mobile_menu .main_nav .main_nav__li,
+      ul.mc_mobile_menu .sub_nav .sub_nav__li {
+        display: block;
+        padding: 16px 16px;
+        border-bottom: 1px solid #2C4963;
+      }
+        ul.mc_mobile_menu .sub_nav .sub_nav__li {
+          background: #233A4E;
+        }
+        ul.mc_mobile_menu .main_nav .main_nav__li:hover,
+        ul.mc_mobile_menu .sub_nav .sub_nav__li:hover {
+          background: #0D263D;
+        }
+/* click時の背景 - 背景ClickでもDrawerを閉じる */
+.overlay {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity .5s;
+}
+  .overlay.open {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+/* Drawer開始 */
+.menu_trigger {
+  display: none;
+  width: 24px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: absolute;
+  top: 36px;
+  right: 30px;
+  z-index: 101;
+  transform: translateX(0);
+  transition: transform .5s;
+}
+  .menu_trigger.active {
+    transform: translateX(-320px);
+    position: fixed;
+  }
+  .menu_trigger span {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all .5s;
+  }
+    .menu_trigger.active span {
+      background-color: #fff;
+    }
+    .menu_trigger span:nth-of-type(1) {
+      top: 0;
+    }
+    .menu_trigger.active span:nth-of-type(1) {
+      transform: translateY(8px) rotate(-45deg);
+    }
+    .menu_trigger span:nth-of-type(2) {
+      top: 8px;
+    }
+    .menu_trigger.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+    .menu_trigger span:nth-of-type(3) {
+      bottom: 0;
+    }
+    .menu_trigger.active span:nth-of-type(3) {
+      transform: translateY(-8px) rotate(45deg);
+    }
+
+.mc_mobile_menu__wrap {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 102;
+  transform: translate(320px);
+  transition: all .5s;
+}
+.mc_mobile_menu__wrap.open {
+  transform: translateZ(0);
+}
+
+/* top news */
+.mc_top_news_base {
+  position: relative;
+}
+.mc_top_news {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: -80px;
+  z-index: 30;
+}
+  .mc_top_news__icon {
+    position: relative;
+    width: 20%;
+  }
+    .mc_top_news__icon__ttl {
+      position: absolute;
+      top: 24px;
+      left: 80px;
+      z-index: 31;
+    }
+    .mc_top_news__icon__bg {
+      width: 100%;
+      -webkit-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+      -moz-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+      -ms-filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+      filter:drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  .mc_top_news__text {
+    position: relative;
+    width: 80%;
+    padding-left: 24px;
+  }
+    .mc_top_news__text a {
+      text-decoration: underline;
+    }
+    .mc_top_news__text a:hover {
+      text-decoration: none;
+      color: #999;
+    }
+/*
+*
+* 03.footer
+*
+*/
+.mc_footer {
+  background: #12314c;
+  position: relative;
+  color: #FFF;
+}
+  .mc_footer_addr {
+    margin-top: 16px;
+  }
+  .mc_footer .mc_section_inner {
+    margin-bottom: 0px;
+    padding-bottom: 16px;
+  }
+  .mc_footer_inner {
+    padding-top: 120px;
+  }
+.copyright {
+  margin-top: 40px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+  /* footer用のnav */
+  .mc_footer_menu__wrap {
+    margin-top: 32px;
+  }
+  .mc_footer_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mc_footer_menu > .main_nav > a {
+  }
+    .mc_footer_menu > .main_nav > a:hover {
+      color: #ccc;
+    }
+    .mc_footer_menu > .main_nav > .sub_nav {
+      padding-top: 12px;
+    }
+    .mc_footer_menu > .main_nav > .sub_nav > li {
+      padding-bottom: 8px;
+      color: #ccc;
+      font-size: 1.2rem;
+    }
+      .mc_footer_menu > .main_nav > .sub_nav > li a:hover {
+        color: #FFF;
+      }
+/*
+*
+* 04.other
+*
+*/
+.mc_otherimage {
+  height: 320px;
+  overflow: hidden;
+}
+  .mc_page_nav {
+    padding: 16px 0;
+    background: #12314c;
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 10;
+  }
+  .mc_page_nav_inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .mc_page_nav__mobile_triger {
+    display: none;
+  }
+  .mc_page_nav__wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 0;
+  }
+    .mc_page_nav__wrap li {
+      /* width: calc(100% / 5); */
+    }
+      .mc_page_nav__li {
+        display: block;
+        padding: 16px;
+        text-align: center;
+        color: #FFF;
+        /* border-right: 1px solid #CCC; */
+        height: 56px;
+        display: flex;
+        align-items: center;
+      }
+      .mc_page_nav__li:hover {
+        background: #233A4E;
+      }
+      .mc_page_nav__wrap li:last-child .mc_page_nav__li {
+        border-right: none;
+      }
+img.mobile_fix {
+  width: 100%;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  /* padding: 15px 0 5px 0;
+  margin: 0 10px 10px 10px; */
+  -webkit-overflow-scrolling: touch; /* スマホでスクロールを滑らかにする */
+}
+
+/* 【スクロールバー】 うっとりするぐらいおしゃれにサイトの雰囲気合わせて変更 */
+
+.breadcrumb::-webkit-scrollbar {
+  height: 5px;
+}
+
+.breadcrumb::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #eee;
+}
+
+.breadcrumb::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #999;
+}
+
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb ul li {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: table-cell; /* [必須]  */
+  white-space: nowrap; /* [必須] テキストを改行させないように */
+  vertical-align: middle;
+  padding-right: 26px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.breadcrumb ul li:last-child {
+    padding-right: 0;
+}
+
+.breadcrumb ul li:last-child:after {
+    display: none;
+}
+
+/* 【矢印】 ため息がでるぐらいかっこよくサイトの雰囲気に合わせて変更 */
+
+.breadcrumb ul li:after {
+    position: absolute;
+    display: block;
+    content: '';
+    content: ">";
+    top: 0px;
+    right: 8px;
+}
+
+/* 【リンクアンダーライン】 適当にサイトの雰囲気に合わせて変更 */
+
+.breadcrumb ul li a {
+  position: relative;
+}
+
+.breadcrumb ul li a:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+    bottom: -4px;
+}
+
+.breadcrumb ol li a,
+.breadcrumb ol li span {
+    position: relative;
+    display: block;
+    top: -4px;
+}
+
+.breadcrumb ul li span {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+/* スクロール設定解除 */
+
+.breadcrumb.no-scroll ul {
+    display: block;
+}
+
+.breadcrumb.no-scroll ul li {
+    display: inline-block;
+    margin-bottom: 12px;
+    white-space: normal;
+}
+
+.breadcrumb.no-scroll ul li:after {
+    top: -4px;
+}
+
+/* PC用リンクアニメーション サイトの雰囲気に合わせ劇シブに変更 */
+
+@media print,screen and (min-width: 1024px) { /* 1024pxは適宜変更 */
+    .breadcrumb ul li a:before {
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    .breadcrumb ul li a:hover:before {
+        transform: scaleX(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  /* hide global nav */
+  .mc_global_menu__wrap {
+    display: none;
+  }
+  /* display menu_trigger */
+  .menu_trigger {
+    display: inline-block;
+  }
+  /* resize background and font size in squarenav */
+  .mc_cp_bgphoto_contents__overnav,
+  .mc_cp_bgphoto_contents__squarenav,
+  .mc_cp_bgphoto_contents__centertext {
+    width: 90%;
+    margin-left: -45%;
+  }
+    .mc_cp_bgphoto_contents__squarenav__unit .text {
+      font-size: 1.4rem;
+    }
+  /* 
+    resize background in top image 
+    changed by image height
+  */
+  .mc_mainimage {
+    height: 600px;
+    overflow: hidden;
+  }
+  .mobile_fix_wrap {
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+  }
+    .mobile_fix_wrap__bottom {
+      height: 530px;
+      overflow: hidden;
+      position: relative;
+    }
+  /* centering image */
+  img.mobile_fix {
+    width: 1000px;
+    max-width: initial;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -500px;
+  }
+  .mc_otherimage {
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .header_logo span {
+    font-size: 1.8rem;
+    display: inline-block;
+    padding-left: 8px;
+    font-weight: 100;
+  }
+  .mc_top_news {
+    display: block;
+    position: inherit;
+    top: 0px;
+  }
+  .mc_section_inner.mc_top_news_base {
+    margin-bottom: 48px;
+    width: 400px;
+  }
+    .mc_top_news__icon {
+      margin: 0 auto;
+      width: 30%;
+    }
+    .mc_top_news__icon__ttl {
+      top: 16px;
+      left: 54px;
+      font-size: 1.2rem;
+    }
+    .mc_top_news__text {
+      margin: 16px auto 0;
+      text-align: center;
+      width: 80%;
+    }
+    .mc_slash_right::after {
+      border-bottom: none;
+    }
+  .mc_section_inner,
+  .mc_section_inner__bread {
+    width: 90%;
+  }
+  /* other page sub navigation */
+  .mc_page_nav {
+    padding: 16px;
+  }
+  .mc_page_nav_inner {
+    border: 1px solid #999;
+  }
+  .mc_page_nav__mobile_triger {
+    display: block;
+    color: #FFF;
+    padding: 16px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    height: 56px;
+    position: relative;
+  }
+    .mc_page_nav__mobile_triger::after {
+      content: '▼';
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      margin-top: -12px;
+    }
+    .mc_page_nav__mobile_triger.on::after {
+      content: '▲';
+    }
+      .mc_page_nav__mobile_triger:hover {
+        background: #233A4E;
+      }
+  .mc_page_nav__wrap {
+    display: none;
+  }
+    .mc_page_nav__wrap li {
+      width: 100%;
+    }
+      .mc_page_nav__wrap li .mc_page_nav__li {
+        display: block;
+        text-align: left;
+        border-right: none;
+      }
+  .mc_cp_caption_photo_other {
+    display: block;
+  }
+    .mc_cp_caption_photo_other__unit {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .mc_cp_caption_photo_other__unit:last-child {
+      margin-bottom: 0px;
+    }
+  .mc_cp_contents__overnav__unit .text,
+  .mc_cp_bgphoto_contents__overnav__unit .text, 
+  .mc_cp_bgphoto_contents__squarenav__unit .text {
+    font-size: 1.2rem;
+  }
+  .mc_cp_slider__article__title .ttl {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+    .mc_cp_slider__article__title .text {
+      font-size: 1.0rem;
+      line-height: 1.5;
+    }
+  /* footer用のnav */
+  .mc_footer_menu__wrap {
+    margin-top: 32px;
+  }
+  .mc_footer_menu {
+    display: block;
+  }
+  .mc_footer_menu > .main_nav {
+    margin-bottom: 16px;
+  }
+  .mc_footer_menu > .main_nav > a {
+    margin-bottom: 12px;
+    display: block;
+  }
+  .mc_footer_menu > .main_nav > a:first-child {
+    margin-top: 0px;
+  }
+    .mc_footer_menu > .main_nav > a:hover {
+      color: #ccc;
+    }
+    .mc_footer_menu > .main_nav > .sub_nav {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top: 1px solid #999;
+      border-left: 1px solid #999;
+    }
+    .mc_footer_menu > .main_nav > .sub_nav > li {
+      padding: 8px 0;
+      font-size: 1.0rem;
+      border-right: 1px solid #999;
+      border-bottom: 1px solid #999;
+      width: 50%;
+    }
+      .mc_footer_menu > .main_nav > .sub_nav > li a {
+        display: block;
+        padding: 0 8px;
+      }
+      .mc_footer_menu > .main_nav > .sub_nav > li a:hover {
+        color: #FFF;
+      }
+}
